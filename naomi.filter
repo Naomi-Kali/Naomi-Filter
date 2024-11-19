@@ -1,0 +1,448 @@
+//Naomi Filter Hell yeah
+Attribute[Author]: Naomi
+Attribute[Name]: NaomiFilter
+Attribute[Version]: 1.0
+Attribute[FilterLevels]: The filter levels are as follows
+FilterLevel[1]: Tier 1
+FilterLevel[2]: Tier 2
+FilterLevel[3]: Tier 3
+FilterLevel[4]: Mapping
+
+// Sounds For TheKing
+Sound[drop1]: "naomiSounds\Favorites"
+Sound[drop2]: "naomiSounds\GiveItToMe"
+Sound[drop3]: "naomiSounds\IGiveItToYouFreely"
+Sound[drop4]: "naomiSounds\Insects"
+Sound[drop5]: "naomiSounds\ItCantBe"
+Sound[drop6]: "naomiSounds\Look"
+Sound[drop7]: "naomiSounds\LookAtThis"
+Sound[drop8]: "naomiSounds\Madness"
+Sound[drop9]: "naomiSounds\Mortal"
+Sound[drop10]: "naomiSounds\Satisfying"
+Sound[drop11]: "naomiSounds\ThatWhichYouNeed"
+Sound[drop12]: "naomiSounds\TheDarkEmber"
+Sound[drop13]: "naomiSounds\UltimateChaos"
+Sound[drop14]: "naomiSounds\Wait"
+Sound[drop15]: "naomiSounds\YouGotLucky"
+
+Option[IgnoreMissingSounds]: True
+
+
+
+// Skiller Items
+ItemDisplay[CLSK0>1]: %NAME%%RED%+ Ama Skills
+ItemDisplay[CLSK1>1]: %NAME%%RED%+ Sorc Skills
+ItemDisplay[CLSK2>1]: %NAME%%RED%+ Necr Skills
+ItemDisplay[CLSK3>1]: %NAME%%RED%+ Pal Skills
+ItemDisplay[CLSK4>1]: %NAME%%RED%+ Barb Skills
+ItemDisplay[CLSK5>1]: %NAME%%RED%+ Dru Skills
+ItemDisplay[CLSK6>1]: %NAME%%RED%+ Asa Skills
+ItemDisplay[ALLSK>1]: %NAME%%BLUE%+ All Skills
+
+ItemDisplay[TABSK0>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Bow & Crossbow (Ama)
+ItemDisplay[TABSK1>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Passive & Magic (Ama)
+ItemDisplay[TABSK2>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Javelin & Spear (Ama)
+ItemDisplay[TABSK8>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Fire (Sorc)
+ItemDisplay[TABSK9>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Lightning (Sorc)
+ItemDisplay[TABSK10>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Cold (Sorc)
+ItemDisplay[TABSK16>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Curses (Necr)
+ItemDisplay[TABSK17>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Poison & Bone (Necr)
+ItemDisplay[TABSK18>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Summon (Necr)
+ItemDisplay[TABSK24>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Combat (Pal)
+ItemDisplay[TABSK25>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Offensive Auras (Pal)
+ItemDisplay[TABSK26>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Defensive Auras (Pal)
+ItemDisplay[TABSK32>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Combat (Barb)
+ItemDisplay[TABSK33>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Masteries (Barb)
+ItemDisplay[TABSK34>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Warcries (Barb)
+ItemDisplay[TABSK40>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Summoning (Dru)
+ItemDisplay[TABSK41>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Shapeshifting (Dru)
+ItemDisplay[TABSK42>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Elemental (Dru)
+ItemDisplay[TABSK48>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Traps (Asa)
+ItemDisplay[TABSK49>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Shadow Disciplines (Asa)
+ItemDisplay[TABSK50>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Martial Arts (Asa)
+
+// [Sorc SKILLS ALL THE TIME] -> Under Extending
+ItemDisplay[SKILL("Fire Mastery")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Fire Mastery
+ItemDisplay[SKILL("Lightning Mastery")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Lightning Mastery
+ItemDisplay[SKILL("Cold Mastery")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Cold Mastery
+
+// Fire
+ItemDisplay[SKILL("Fire Bolt")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Fire Bolt
+ItemDisplay[SKILL("Fire Ball")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Fire Bal
+ItemDisplay[SKILL("Meteor")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Meteor
+ItemDisplay[SKILL("Hydra")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Hydra
+
+
+// Lightning
+
+// Cold
+ItemDisplay[SKILL("Ice Bolt")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Ice Bolt
+ItemDisplay[SKILL("Frozen Orb") >1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Frozen Orb
+ItemDisplay[SKILL("Blizzard") >1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Blizzard
+
+
+// [Assasins SKILLS ALL THE TIME] -> Under Extending
+ItemDisplay[SKILL("Claw Mastery")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Claw Mastery
+ItemDisplay[SKILL("Wake of Fire")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Wake of Fire
+
+
+// [Necro SKILLS ALL THE TIME] -> Under Extending
+ItemDisplay[SKILL("Summon Mastery")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Summon Mastery
+ItemDisplay[SKILL("Raise Skeleton Warrior")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Raise Skeleton Warrior
+ItemDisplay[SKILL("Raise Skeletal Mage")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Raise Skeleton Mage
+ItemDisplay[SKILL("Blood Golem")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Blood Golem
+ItemDisplay[SKILL("Iron Golem")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Iron Golem
+ItemDisplay[SKILL("Fire Golem")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Fire Golem
+ItemDisplay[SKILL("Clay Golem")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Clay Golem
+ItemDisplay[SKILL("Hemorrhage")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Hemorrhage
+
+// [Barb SKILLS ALL THE TIME] -> Under Extending
+ItemDisplay[SKILL("Whirling Axes")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Whirling Axes
+ItemDisplay[SKILL("Whirlwind")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Whirlwind
+ItemDisplay[SKILL("Leap Slam")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Leap Slam
+
+// Mission Items
+ItemDisplay[bbb]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[ass]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[bkd]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[bks]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[box]: %NOTIFY(ITEM,HIGH)% %CORAL% Horadic
+ItemDisplay[g34]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[j34]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[mss]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[qbr]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[qey]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[qhr]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[qf1]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[qf2]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[tr1]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[tr2]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[xyz]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[ice]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[hdm]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[msf]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[vip]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[hst]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[g33]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+ItemDisplay[hfh]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
+
+// Gold Section
+// Lvl 0-20
+ItemDisplay[GOLD<100 CLVL<20]:
+// Lvl 20-65
+ItemDisplay[GOLD<250 (CLVL>19 AND CLVL<=65)]:
+// Lvl 65+
+ItemDisplay[GOLD<2500 CLVL>65]:
+
+ItemDisplay[GOLD>2500]: %PURPLE%
+
+// HP + MP Section + Rejuv
+ItemDisplay[hp1 CLVL<10]: %RED% HP [1]      //Show <10
+ItemDisplay[hp1 CLVL>9]:                    //Hide
+ItemDisplay[hp2 CLVL<20]: %RED% HP [2]      //Show <20
+ItemDisplay[hp2 CLVL>19]:                   //Hide
+ItemDisplay[hp3 CLVL<25]: %RED% HP [3]      //Show <25
+ItemDisplay[hp3 CLVL>24]:                   //Hide
+ItemDisplay[hp4 CLVL<30]: %RED% HP [4]      //Show <30
+ItemDisplay[hp4 CLVL>39]:
+ItemDisplay[hp5]: %RED% HP [5]
+// MANA
+ItemDisplay[mp1 CLVL<10]: %BLUE% MP [1]     //Show <10
+ItemDisplay[mp1 CLVL>9]:                    //Hide
+ItemDisplay[mp2 CLVL<20]: %BLUE% MP [2]          //Show <20
+ItemDisplay[mp2 CLVL>19]:                        //Hide
+ItemDisplay[mp3 CLVL<25]: %BLUE% MP [3]     //Show <25
+ItemDisplay[mp3 CLVL>24]:                   //Hide
+ItemDisplay[mp4 CLVL<30]: %BLUE% MP [4]     //Show <30
+ItemDisplay[mp4 CLVL>39]:                   //Hide
+ItemDisplay[mp5]: %BLUE% MP [5]
+// Rejuv
+ItemDisplay[rvs]: %PURPLE% R 35%
+ItemDisplay[rvl]: %PURPLE% R 70%
+
+// Shitty Potions
+ItemDisplay[yps]:
+ItemDisplay[vps]:
+ItemDisplay[wms]:
+ItemDisplay[gps]:
+ItemDisplay[gpm]:
+ItemDisplay[gpl]:
+ItemDisplay[ops:
+ItemDisplay[opm]:
+ItemDisplay[opl]:
+
+// TP and ID
+ItemDisplay[tsc]: %BLUE% TP
+ItemDisplay[isc CLVL<15]: %RED% ID
+
+// Tomes
+ItemDisplay[tbk]: %BLUE% Tome Of TP
+ItemDisplay[ibk]: %RED% Tome Of ID
+
+// Key
+ItemDisplay[key]: %GOLD% Keys
+
+// Gems
+// Ametist
+ItemDisplay[gcv FILTERLVL<2]:%PURPLE%C A
+ItemDisplay[gfv FILTERLVL<2]:%PURPLE%Fld A
+ItemDisplay[gsv FILTERLVL<2]:%PURPLE%A
+ItemDisplay[gzv]:%PURPLE%Fls A
+ItemDisplay[gpv]:%MAPICON(3,1)%%NOTIFYSOUND(drop15)%%PURPLE%P A
+
+// Topaz
+ItemDisplay[gcy FILTERLVL<2]:%YELLOW%C T
+ItemDisplay[gfy FILTERLVL<2]:%YELLOW%Fld T
+ItemDisplay[gsy FILTERLVL<2]:%YELLOW%T
+ItemDisplay[gly]:%NOTIFY(ITEM,HIGH)%%YELLOW%Fls T
+ItemDisplay[gpy]:%MAPICON(3,1)%%NOTIFYSOUND(drop15)%%NOTIFY(ITEM,HIGH)%%YELLOW%P T
+
+// Saphire
+ItemDisplay[gcb FILTERLVL<2]: %BLUE%C S
+ItemDisplay[gfb FILTERLVL<2]: %BLUE%Fld S
+ItemDisplay[gsb FILTERLVL<2]: %BLUE%S
+ItemDisplay[glb]:%NOTIFY(ITEM,HIGH)%%BLUE%Fls S
+ItemDisplay[gpb]:%MAPICON(3,1)%%NOTIFYSOUND(drop15)%%NOTIFY(ITEM,HIGH)%%BLUE%P S
+
+// Emerald
+ItemDisplay[gcg FILTERLVL<2]:%GREEN%C E
+ItemDisplay[gfg FILTERLVL<2]:%GREEN%Fld E
+ItemDisplay[gsg FILTERLVL<2]:%GREEN%E
+ItemDisplay[glg]:%NOTIFY(ITEM,HIGH)%%GREEN%Fls E
+ItemDisplay[gpg]:%MAPICON(3,1)%%NOTIFYSOUND(drop15)%%NOTIFY(ITEM,HIGH)%%GREEN%P E
+
+// Ruby
+ItemDisplay[gcr FILTERLVL<2]:%RED%C R
+ItemDisplay[gfr FILTERLVL<2]:%RED%Fld R
+ItemDisplay[gsr FILTERLVL<2]:%RED%R
+ItemDisplay[glr]:%NOTIFY(ITEM,HIGH)%%RED%Fls R
+ItemDisplay[gpr]:%MAPICON(3,1)%%NOTIFYSOUND(drop15)%%NOTIFY(ITEM,HIGH)%%RED%P R
+
+// Diamond
+ItemDisplay[gcw FILTERLVL<2]:%GRAY%C D
+ItemDisplay[gfw FILTERLVL<2]:%GRAY%Fld D
+ItemDisplay[gsw FILTERLVL<2]:%GRAY%D
+ItemDisplay[glw]:%NOTIFY(ITEM,HIGH)% %GRAY%Fls D
+ItemDisplay[gpw]:%MAPICON(3,1)%%NOTIFYSOUND(drop15)%%NOTIFY(ITEM,HIGH)%%GRAY%P D
+
+// Skull
+ItemDisplay[skc FILTERLVL<2]:%WHITE%C Sk
+ItemDisplay[skf FILTERLVL<2]:%WHITE%Fld Sk
+ItemDisplay[sku FILTERLVL<2]:%WHITE%Sk
+ItemDisplay[skl]:%NOTIFY(ITEM,HIGH)%%WHITE%Fls Sk
+ItemDisplay[skz]:%MAPICON(3,1)%%NOTIFYSOUND(drop15)%%NOTIFY(ITEM,HIGH)%%WHITE%P Sk
+
+// Runes
+ItemDisplay[r01 FILTERLVL<2]:%NOTIFY(ITEM,HIGH)%%PURPLE%El
+ItemDisplay[r02 FILTERLVL<2]:%NOTIFY(ITEM,HIGH)%%PURPLE%Eld
+ItemDisplay[r03 FILTERLVL<2]:%NOTIFY(ITEM,HIGH)%%PURPLE%Tir
+ItemDisplay[r04 FILTERLVL<2]:%NOTIFY(ITEM,HIGH)%%PURPLE%Nef
+ItemDisplay[r05 FILTERLVL<2]:%NOTIFY(ITEM,HIGH)%%PURPLE%Eth
+ItemDisplay[r06 FILTERLVL<2]:%NOTIFY(ITEM,HIGH)%%PURPLE%Ith
+ItemDisplay[r07 FILTERLVL<2]:%NOTIFY(ITEM,HIGH)%%PURPLE%Tal
+ItemDisplay[r08 FILTERLVL<2]:%NOTIFY(ITEM,HIGH)%%PURPLE%Ral
+ItemDisplay[r09 FILTERLVL<2]:%NOTIFY(ITEM,HIGH)%%PURPLE%Ort
+ItemDisplay[r10]:%NOTIFY(ITEM,HIGH)%%PURPLE%Thul
+ItemDisplay[r11]:%NOTIFY(ITEM,HIGH)%%PURPLE%Amn
+ItemDisplay[r12]:%NOTIFY(ITEM,HIGH)%%PURPLE%Sol
+ItemDisplay[r13]:%NOTIFY(ITEM,HIGH)%%PURPLE%Shael
+ItemDisplay[r14]:%NOTIFY(ITEM,HIGH)%%PURPLE%Dol
+ItemDisplay[r15]:%NOTIFY(ITEM,HIGH)%%PURPLE%Hel
+ItemDisplay[r16]:%NOTIFY(ITEM,HIGH)%%PURPLE%Io
+ItemDisplay[r17]:%NOTIFY(ITEM,HIGH)%%PURPLE%Lum
+ItemDisplay[r18]:%NOTIFY(ITEM,HIGH)%%PURPLE%Ko
+ItemDisplay[r19]:%NOTIFY(ITEM,HIGH)%%PURPLE%Fal
+ItemDisplay[r20]:%NOTIFY(ITEM,HIGH)%%PURPLE%Lem
+ItemDisplay[r21]:%NOTIFY(ITEM,HIGH)%%PURPLE%Pul
+ItemDisplay[r22]:%NOTIFY(ITEM,HIGH)%%PURPLE%Um
+ItemDisplay[r23]:%NOTIFY(ITEM,HIGH)%%PURPLE%Mal
+ItemDisplay[r24]:%NOTIFY(ITEM,HIGH)%%PURPLE%Ist
+ItemDisplay[r25]:%NOTIFY(ITEM,HIGH)%%PURPLE%Gul
+ItemDisplay[r26]:%NOTIFY(ITEM,HIGH)%%PURPLE%Vex
+ItemDisplay[r27]:%NOTIFY(ITEM,HIGH)%%PURPLE%Ohm
+ItemDisplay[r28]:%NOTIFY(ITEM,HIGH)%%PURPLE%Lo
+ItemDisplay[r29]:%NOTIFY(ITEM,HIGH)%%PURPLE%Sur
+ItemDisplay[r30]:%NOTIFY(ITEM,HIGH)%%PURPLE%Ber
+ItemDisplay[r31]:%NOTIFY(ITEM,HIGH)%%PURPLE%Jah
+ItemDisplay[r32]:%NOTIFY(ITEM,HIGH)%%PURPLE%Cham
+ItemDisplay[r33]:%NOTIFY(ITEM,HIGH)%%PURPLE%Zod
+
+// Charms
+ItemDisplay[cm1 UNI ID]:%CORAL%%NAME%
+ItemDisplay[cm1 UNI !ID]:%NOTIFY(ITEM,HIGH)%%MAPICON(96,1)%%CORAL%Annihilus
+ItemDisplay[cm2 UNI ID]:%CORAL%%NAME%
+ItemDisplay[cm2 UNI !ID]:%NOTIFY(ITEM,HIGH)%%MAPICON(96,1)%%CORAL%Hellfire Torch
+ItemDisplay[cm3 UNI ID]:%CORAL%%NAME%
+ItemDisplay[cm3 UNI !ID]:%NOTIFY(ITEM,HIGH)%%MAPICON(96,1)%%CORAL%Gheed's Fortune
+ItemDisplay[cm4 UNI ID]:%CORAL%%NAME%
+ItemDisplay[cm4 UNI !ID]:%NOTIFY(ITEM,HIGH)%%MAPICON(96,1)%%CORAL%Horadrim Sigil
+
+ItemDisplay[cm1 ID FILTERLVL=1 ILVL<60]:%NAME%
+ItemDisplay[cm1 !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[1]
+ItemDisplay[cm1 ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME%
+ItemDisplay[cm1 !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[1]
+ItemDisplay[cm1 ID FILTERLVL>2 ILVL>79]:%NAME%
+ItemDisplay[cm1 !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[1]
+
+ItemDisplay[cm2 ID FILTERLVL=1 ILVL<60]:%NAME%
+ItemDisplay[cm2 !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[2]
+ItemDisplay[cm2 ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME%
+ItemDisplay[cm2 !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[2]
+ItemDisplay[cm2 ID FILTERLVL>2 ILVL>79]:%NAME%
+ItemDisplay[cm2 !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[2]
+
+
+ItemDisplay[cm3 ID FILTERLVL=1 ILVL<60]:%NAME%
+ItemDisplay[cm3 !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[3]
+ItemDisplay[cm3 ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME%
+ItemDisplay[cm3 !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[3]
+ItemDisplay[cm3 ID FILTERLVL>2 ILVL>79]:%NAME%
+ItemDisplay[cm3 !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[3]
+
+// Ring
+ItemDisplay[rin !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
+ItemDisplay[rin ID FILTERLVL=1 ILVL<60]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[rin !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
+ItemDisplay[rin ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[rin !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
+ItemDisplay[rin ID FILTERLVL>2 ILVL>79]:%NAME% %GREEN%(%ILVL%)
+
+// Amulet
+ItemDisplay[amu !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%Amu %GREEN%(%ILVL%)
+ItemDisplay[amu ID FILTERLVL=1 ILVL<60]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[amu !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%Amu %GREEN%(%ILVL%)
+ItemDisplay[amu ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[amu !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%Amu %GREEN%(%ILVL%)
+ItemDisplay[amu ID FILTERLVL>2 ILVL>79]:%NAME% %GREEN%(%ILVL%)
+
+// Jewels
+ItemDisplay[jew MAG !ID]:%MAPICON(21,0)%%NOTIFY(ITEM,HIGH)%%BLUE%Jewel %GREEN%(%ILVL%)
+ItemDisplay[jew RARE !ID]:%MAPICON(21,0)%%NOTIFY(ITEM,HIGH)%%YELLOW%Jewel %GREEN%(%ILVL%)
+
+ItemDisplay[jew MAG ID]:%MAPICON(21,0)% %BLUE% Jewel %GREEN%(%ILVL%)
+ItemDisplay[jew RARE ID]:%MAPICON(21,0)% %YELLOW% Jewel %GREEN%(%ILVL%)
+
+// Uber
+ItemDisplay[pk1]:%NOTIFY(ITEM,HIGH)%%CORAL%Pandemonium Key %GREEN%(1)
+ItemDisplay[pk2]:%NOTIFY(ITEM,HIGH)%%CORAL%Pandemonium Key %GREEN%(2)
+ItemDisplay[pk3]:%NOTIFY(ITEM,HIGH)%%CORAL%Pandemonium Key %GREEN%(3)
+ItemDisplay[dhn]:%NOTIFY(ITEM,HIGH)%%CORAL%%NAME%
+ItemDisplay[bey]:%NOTIFY(ITEM,HIGH)%%CORAL%%NAME%
+ItemDisplay[mbr]:%NOTIFY(ITEM,HIGH)%%CORAL%%NAME%
+
+// ESSENCE + Token
+ItemDisplay[tes]:%NOTIFY(ITEM,HIGH)%%CORAL%TeS
+ItemDisplay[ceh]:%NOTIFY(ITEM,HIGH)%%CORAL%CeH
+ItemDisplay[bet]:%NOTIFY(ITEM,HIGH)%%CORAL%BeT
+ItemDisplay[fed]:%NOTIFY(ITEM,HIGH)%%CORAL%FeD
+ItemDisplay[toa]:%NOTIFY(ITEM,HIGH)%%CORAL%ToA
+
+// Wirst Leg
+ItemDisplay[leg]:%NOTIFY(ITEM,HIGH)%%CORAL%Mu Mu Muu
+
+// Pod Items
+ItemDisplay[cx8]:%MAPICON(24,1)%%NOTIFYSOUND(drop9)%%NOTIFY(ITEM,HIGH)%%CORAL%Orb of Enchantment
+ItemDisplay[cx5]:%MAPICON(24,1)%%NOTIFYSOUND(drop9)%%NOTIFY(ITEM,HIGH)%%CORAL%Orb of Corruption
+
+// Maps
+ItemDisplay[ma1]:%NOTIFY(ITEM,HIGH)%%CORAL%Dark Cavern
+ItemDisplay[ma2]:%NOTIFY(ITEM,HIGH)%%CORAL%Forgotten Desert
+ItemDisplay[ma3]:%NOTIFY(ITEM,HIGH)%%CORAL%Abandoned Precinct
+ItemDisplay[ma4]:%NOTIFY(ITEM,HIGH)%%CORAL%Desecrated Temple
+ItemDisplay[ma5]:%NOTIFY(ITEM,HIGH)%%CORAL%Frigid Plateau
+ItemDisplay[ma6]:%NOTIFY(ITEM,HIGH)%%CORAL%Ruined Citadel
+ItemDisplay["Baleful Alcazar Relic"]:%NOTIFY(ITEM,HIGH)%%CORAL%Baleful Alcazar
+ItemDisplay["Decomposing Settlement Relic"]:%NOTIFY(ITEM,HIGH)%%CORAL%Decomposing Settlement
+ItemDisplay["Icy Cavern Relic"]:%NOTIFY(ITEM,HIGH)%%CORAL%Icy Cavern
+ItemDisplay["Abyssal Furnace Relic"]: %NOTIFY(ITEM,HIGH)% %CORAL%Abyssal Furnace
+ItemDisplay[ma7]:%NOTIFY(ITEM,HIGH)%%CORAL%Burnt Forest
+ItemDisplay[ma8]:%NOTIFY(ITEM,HIGH)%%CORAL%Musty Crypt
+ItemDisplay[ma9]:%NOTIFY(ITEM,HIGH)%%CORAL%Dim Cellar
+ItemDisplay[ma11]:%NOTIFY(ITEM,HIGH)%%CORAL%Pleasant Pasture
+
+
+// RuneWord Bases
+ItemDisplay[RW]:%NOTIFY(ITEM,HIGH)%%NAME%
+
+ItemDisplay[EQ2 SUP SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Stealth/Smoke Base
+ItemDisplay[EQ2 SUP SOCK=3]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Enigma Base
+ItemDisplay[EQ1 SUP SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Lore Base
+ItemDisplay[EQ3 SUP SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Rhyme Base
+ItemDisplay[EQ3 SUP SOCK=3]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Ancient's Pledge Base
+ItemDisplay[(EQ3 OR WP3) SUP SOCK=4]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Spirit Base
+ItemDisplay[(WP8 OR WP7) SUP SOCK=4 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Insight/Infinity Base
+
+
+// Uniq Items
+ItemDisplay[uap UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // SHAKO
+ItemDisplay[xea UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // Skin of the Vipermagi
+ItemDisplay[oba UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // The Oculus
+
+// Armors
+//ItemDisplay[EQ1]: %NAME%
+//ItemDisplay[EQ2]: %NAME%
+//ItemDisplay[EQ4]: %NAME%
+//ItemDisplay[EQ5]: %NAME%
+//ItemDisplay[EQ6]: %NAME%
+//ItemDisplay[EQ7]: %NAME%
+
+ItemDisplay[ARMOR FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[ARMOR FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[ARMOR SUP !MAG SOCK>1]:%NAME% (%ILVL%)%GREEN% (%SOCKETS%)
+ItemDisplay[ARMOR !SUP !MAG SOCK>1]:%NAME% (%ILVL%)%GREEN% (%SOCKETS%)
+
+// Weapons
+//ItemDisplay[WP1]: %NAME%
+//ItemDisplay[WP2]: %NAME%
+//ItemDisplay[WP3]: %NAME%
+//ItemDisplay[WP4]: %NAME%
+//ItemDisplay[WP5]: %NAME%
+//ItemDisplay[WP6]: %NAME%
+//ItemDisplay[WP7]: %NAME%
+//ItemDisplay[WP8]: %NAME%
+//ItemDisplay[WP9]: %NAME%
+//ItemDisplay[WP10]: %NAME%
+//ItemDisplay[WP11]: %NAME%
+//ItemDisplay[WP12]: %NAME%
+//ItemDisplay[WP13]: %NAME%
+ItemDisplay[WEAPON FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)  // Tier 1
+ItemDisplay[WEAPON FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)         // Tier 2
+ItemDisplay[WEAPON SUP !MAG SOCK>1]:%NAME% (%ILVL%)%GREEN% (%SOCKETS%)
+ItemDisplay[WEAPON !SUP !MAG SOCK>1]:%NAME% (%ILVL%)%GREEN% (%SOCKETS%)
+
+// Class Specific
+ItemDisplay[CL1 FILTERLVL<2 !NMAG !ETH (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)     // Tier1
+ItemDisplay[CL1 FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)            // Tier 2
+//ItemDisplay[CL1]: %NAME% (%ILVL%)
+
+ItemDisplay[CL2 FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)     // Tier1
+ItemDisplay[CL2 FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)            // Tier 2
+//ItemDisplay[CL2]: %NAME% (%ILVL%)
+
+ItemDisplay[CL3 FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)     // Tier1
+ItemDisplay[CL3 FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)            // Tier 2
+//ItemDisplay[CL3]: %NAME% (%ILVL%)
+
+ItemDisplay[CL4 FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)     // Tier1
+ItemDisplay[CL4 FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)            // Tier 2
+//ItemDisplay[CL4]: %NAME% (%ILVL%)
+
+ItemDisplay[CL5 FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)     // Tier1
+ItemDisplay[CL5 FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)            // Tier 2
+//ItemDisplay[CL5]: %NAME% (%ILVL%)
+
+ItemDisplay[CL6 FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)     // Tier1
+ItemDisplay[CL6 FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)            // Tier 2
+//ItemDisplay[CL6]: %NAME% (%ILVL%)
+
+ItemDisplay[CL7 FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)     // Tier1
+ItemDisplay[CL7 FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)            // Tier 2
+//ItemDisplay[CL7]: %NAME% (%ILVL%)
+
+// Amazon Arrow Bolt
+ItemDisplay[aq2 RARE]:%NOTIFY(ITEM,HIGH)%%NAME% %GREEN%(%ILVL%)
+ItemDisplay[aq2]: %NAME% (%ILVL%)
+
+ItemDisplay[cq2 RARE]:%NOTIFY(ITEM,HIGH)%%NAME% %GREEN%(%ILVL%)
+ItemDisplay[cq2]: %NAME% (%ILVL%)
+
