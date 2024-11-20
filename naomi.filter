@@ -379,13 +379,32 @@ ItemDisplay[(EQ3 OR WP3) SUP SOCK=4]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Spirit Ba
 ItemDisplay[(WP8 OR WP7) SUP SOCK=4 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Insight/Infinity Base
 
 // Socket Bases
-ItemDisplay[EQ3 (SUP AND NMAG) SOCK=0]: %NAME%
+ItemDisplay[CL3 (SUP AND NMAG) SOCK=0]:%NAME% %ORANGE%PAL
+ItemDisplay[EQ3 (SUP AND NMAG) SOCK=0]:%NAME%
+ItemDisplay[WP3 (SUP AND NMAG) SOCK=0]:%NAME%
 
 
 // Uniq Items
 ItemDisplay[uap UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // SHAKO
 ItemDisplay[xea UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // Skin of the Vipermagi
 ItemDisplay[oba UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // The Oculus
+
+// Set Items
+// Sigon's Set
+ItemDisplay[ghm SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Sigon's Visor
+ItemDisplay[gth SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Sigon's Shelter
+ItemDisplay[hbt SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Sigon's Sabot
+ItemDisplay[tow SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Sigon's Guard
+ItemDisplay[hbl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Sigon's Wrap
+ItemDisplay[hgl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Sigon's Gage
+
+// Isenhart's
+ItemDisplay[bsd SET !ID]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Lightbrand
+ItemDisplay[fhl SET !ID]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Horns
+ItemDisplay[brs SET !ID]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Case
+ItemDisplay[gts SET !ID]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Parry
+
+
 
 // Armors
 //ItemDisplay[EQ1]: %NAME%
@@ -399,6 +418,7 @@ ItemDisplay[ARMOR FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]
 ItemDisplay[ARMOR FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)
 ItemDisplay[ARMOR SUP !MAG SOCK>1]:%NAME% (%ILVL%)%GREEN% (%SOCKETS%)
 ItemDisplay[ARMOR !SUP !MAG SOCK>1]:%NAME% (%ILVL%)%GREEN% (%SOCKETS%)
+
 
 // Weapons
 //ItemDisplay[WP1]: %NAME%
@@ -450,8 +470,12 @@ ItemDisplay[CL7 FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %
 
 // Amazon Arrow Bolt
 ItemDisplay[aq2 RARE]:%NOTIFY(ITEM,HIGH)%%NAME% %GREEN%(%ILVL%)
-ItemDisplay[aq2]: %NAME% (%ILVL%)
+ItemDisplay[aq2 UNI !ID]: %CORAL%Pick Me %GOLD%%NAME% %GREEN%(%ILVL%) %CORAL%Hell Yeah
+ItemDisplay[aq2 UNI ID]: %GOLD%%NAME% %GREEN%(%ILVL%)
+ItemDisplay[aq2 FILTERLVL=1]: %NAME% %GREEN%(%ILVL%)
 
 ItemDisplay[cq2 RARE]:%NOTIFY(ITEM,HIGH)%%NAME% %GREEN%(%ILVL%)
-ItemDisplay[cq2]: %NAME% (%ILVL%)
+ItemDisplay[cq2 UNI !ID]: %CORAL%Pick Me %GOLD%%NAME% %GREEN%(%ILVL%) %CORAL%Hell Yeah
+ItemDisplay[cq2 UNI ID]: %GOLD%%NAME% %GREEN%(%ILVL%)
+ItemDisplay[cq2 FILTERLVL=1]: %NAME% %GREEN%(%ILVL%)
 
