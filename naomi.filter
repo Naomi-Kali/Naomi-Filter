@@ -370,14 +370,23 @@ ItemDisplay[ma11]:%NOTIFY(ITEM,HIGH)%%CORAL%Pleasant Pasture
 
 // RuneWord Bases
 ItemDisplay[RW]:%NOTIFY(ITEM,HIGH)%%NAME%
+// Non Sup Levelling!
+ItemDisplay[FILTERLVL<2 EQ2 NMAG !ETH SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Stealth/Smoke Base
+ItemDisplay[FILTERLVL<2 EQ2 NMAG SOCK=3]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Enigma Base
+ItemDisplay[FILTERLVL<2 EQ1 NMAG SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Lore Base
+ItemDisplay[FILTERLVL<2 EQ3 NMAG SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Rhyme Base
+ItemDisplay[FILTERLVL<2 EQ3 NMAG SOCK=3]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Ancient's Pledge Base
+ItemDisplay[FILTERLVL<2 (EQ3 OR WP3) NMAG SOCK=4]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Spirit Base
+ItemDisplay[FILTERLVL<2 (WP8 OR WP7) SOCK=4 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Insight/Infinity Base
 
-ItemDisplay[EQ2 SUP SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Stealth/Smoke Base
-ItemDisplay[EQ2 SUP SOCK=3]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Enigma Base
-ItemDisplay[EQ1 SUP SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Lore Base
-ItemDisplay[EQ3 SUP SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Rhyme Base
-ItemDisplay[EQ3 SUP SOCK=3]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Ancient's Pledge Base
-ItemDisplay[(EQ3 OR WP3) SUP SOCK=4]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Spirit Base
-ItemDisplay[(WP8 OR WP7) SUP SOCK=4 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Insight/Infinity Base
+// SUP
+ItemDisplay[FILTERLVL>1 EQ2 SUP SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Stealth/Smoke Base
+ItemDisplay[FILTERLVL>1 EQ2 SUP SOCK=3]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Enigma Base
+ItemDisplay[FILTERLVL>1 EQ1 SUP SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Lore Base
+ItemDisplay[FILTERLVL>1 EQ3 SUP SOCK=2]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Rhyme Base
+ItemDisplay[FILTERLVL>1 EQ3 SUP SOCK=3]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Ancient's Pledge Base
+ItemDisplay[FILTERLVL>1 (EQ3 OR WP3) SUP SOCK=4]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Spirit Base
+ItemDisplay[FILTERLVL>1 (WP8 OR WP7) SUP SOCK=4 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%NAME%%ORANGE% Insight/Infinity Base
 
 // Socket Bases
 ItemDisplay[CL3 (SUP AND NMAG) SOCK=0]:%NAME% %ORANGE%PAL
@@ -410,6 +419,7 @@ ItemDisplay[(hbt OR xhb OR uhb) MAG !ETH]:%SAGE%Safety Helm %GREEN%(%ILVL%)
 ItemDisplay[uap UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // SHAKO
 ItemDisplay[xea UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // Skin of the Vipermagi
 ItemDisplay[oba UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // The Oculus
+ItemDisplay[tbl UNI !ETH]: %NOTIFY(ITEM,LOW)%%MAPICON(5)% %TAN%Goldwrap // GoldWrap
 
 // Set Items
 // Sigon's Set
@@ -436,6 +446,34 @@ ItemDisplay[vbt SET]: %NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)% %GREEN%Sander's Ripra
 ItemDisplay[crn SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Coil
 ItemDisplay[tbl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Cord
 ItemDisplay[tgl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Cuff
+
+// Infernal
+ItemDisplay[gwn SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Infernal Torch
+
+// Arctic
+ItemDisplay[qui SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Arctic Furs
+ItemDisplay[vbl SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Arctic Binding
+ItemDisplay[swb SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Arctic Horn
+
+// Berserker
+ItemDisplay[hlm SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Berserker's Headgear
+ItemDisplay[spl SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Berserker's Hauberk
+ItemDisplay[2ax SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Berserker's Hatchet
+
+// Cathan
+ItemDisplay[msk SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Cathan's Visage
+ItemDisplay[chn SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Cathan's Mesh
+ItemDisplay[bst SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Cathan's Rule
+
+// Bul Kathos
+ItemDisplay[7gd SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %RED%* %GREEN%Bul-Kathos Sacred Charge %RED%*
+ItemDisplay[7wd SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %RED%* %GREEN%Bul-Kathos Tribal Guardian %RED%*
+
+// Laying Hands
+ItemDisplay[ulg SET]: %NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %RED%** %GREEN%Laying of Hands %RED%**
+
+// Circlet's        Circlet Coronet Tiara Diadem
+ItemDisplay[(ci0 OR ci1 OR ci2 OR ci3) !SET !ETH]: %NOTIFY(ITEM,HIGH)%%SAGE%%NAME%%MAPICON(21,0)%
 
 
 // Armors
