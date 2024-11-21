@@ -106,7 +106,8 @@ ItemDisplay[bbb]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
 ItemDisplay[ass]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
 ItemDisplay[bkd]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
 ItemDisplay[bks]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
-ItemDisplay[box]: %NOTIFY(ITEM,HIGH)% %CORAL% Horadic{%NL%%ORANGE%(Caster)%GOLD%Ral %PURPLE%Amethyst %YELLOW%Jewel %NL%%ORANGE%(HitPwr) %GOLD%Thul %BLUE%Sapphire %YELLOW%Jewel %NL%%ORANGE%(Blood)%GOLD%Amn %RED%Ruby %YELLOW%Jewel %NL%%ORANGE%(Safety) %GOLD%Thul %GREEN%Emerald %YELLOW%Jewel}
+ItemDisplay[box]: %NOTIFY(ITEM,HIGH)% %CORAL% Horadic{%YELLOW%Jwl %GOLD%Ort %GREEN%PE%NL%%YELLOW%Jwl %GOLD%Thul %BLUE%PS%NL%%YELLOW%Jwl %GOLD%Eth %RED%PR%NL%%YELLOW%Jwl %GOLD%Thul %PURPLE%PA%NL%%NL%%YELLOW%Jwl %GOLD%TAL %GREEN%PE%NL%%YELLOW%Jwl %GOLD%Tal %BLUE%PS%NL%%YELLOW%Jwl %GOLD%TAL %RED%PR%NL%%YELLOW%Jwl %GOLD%ITH %PURPLE%PA%NL%%NL%%YELLOW%Jwl %GOLD%RAL %GREEN%PE%NL%%YELLOW%Jwl %GOLD%ORT %BLUE%PS%NL%%YELLOW%Jwl %GOLD%NEF %RED%PR%NL%%YELLOW%Jwl %GOLD%ORT %PURPLE%PA%NL%%NL%%YELLOW% Jwl %GOLD%Ith %GREEN%PE%NL%%YELLOW%Jwl %GOLD%Ith%BLUE% PS%NL%%YELLOW%Jwl %GOLD%Ral %RED%PR%NL%%YELLOW%Jwl %GOLD%Nef %PURPLE%PA%NL%%WHITE%Helm/Gloves/Belt/Boots%NL%Caster/Blood/HitPwr/Safety}
+
 ItemDisplay[g34]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
 ItemDisplay[j34]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
 ItemDisplay[mss]: %NOTIFY(ITEM,HIGH)% %CORAL% %NAME%
@@ -277,23 +278,23 @@ ItemDisplay[cm3 UNI !ID]:%NOTIFY(ITEM,HIGH)%%MAPICON(96,1)%%CORAL%Gheed's Fortun
 ItemDisplay[cm4 UNI ID]:%CORAL%%NAME%
 ItemDisplay[cm4 UNI !ID]:%NOTIFY(ITEM,HIGH)%%MAPICON(96,1)%%CORAL%Horadrim Sigil
 
-ItemDisplay[cm1 MAG ID FILTERLVL=1 ILVL<60]:%NAME%
-ItemDisplay[cm1 MAG !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[1]
-ItemDisplay[cm1 MAG ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME%
-ItemDisplay[cm1 MAG !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[1]
+ItemDisplay[cm1 MAG ID FILTERLVL=1]:%NAME%
+ItemDisplay[cm1 MAG !ID FILTERLVL=1]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[1]
+ItemDisplay[cm1 MAG ID FILTERLVL=2 ILVL>59]:%NAME%
+ItemDisplay[cm1 MAG !ID FILTERLVL=2 ILVL>59 ]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[1]
 ItemDisplay[cm1 MAG ID FILTERLVL>2 ILVL>79]:%NAME%
 ItemDisplay[cm1 MAG !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[1]
 
-ItemDisplay[cm2 MAG ID FILTERLVL=1 ILVL<60]:%NAME%
-ItemDisplay[cm2 MAG !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[2]
-ItemDisplay[cm2 MAG ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME%
-ItemDisplay[cm2 MAG !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[2]
+ItemDisplay[cm2 MAG ID FILTERLVL=1]:%NAME%
+ItemDisplay[cm2 MAG !ID FILTERLVL=1]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[2]
+ItemDisplay[cm2 MAG ID FILTERLVL=2 ILVL>59]:%NAME%
+ItemDisplay[cm2 MAG !ID FILTERLVL=2 ILVL>59]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[2]
 ItemDisplay[cm2 MAG ID FILTERLVL>2 ILVL>79]:%NAME%
 ItemDisplay[cm2 MAG !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[2]
 
 
-ItemDisplay[cm3 MAG ID FILTERLVL=1 ILVL<60]:%NAME%
-ItemDisplay[cm3 MAG !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[3]
+ItemDisplay[cm3 MAG ID FILTERLVL=1]:%NAME%
+ItemDisplay[cm3 MAG !ID FILTERLVL=1]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[3]
 ItemDisplay[cm3 MAG ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME%
 ItemDisplay[cm3 MAG !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%CORAL%Charm (%ILVL%) %GREEN%[3]
 ItemDisplay[cm3 MAG ID FILTERLVL>2 ILVL>79]:%NAME%
@@ -303,10 +304,10 @@ ItemDisplay[cm3 MAG !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%%MAPICON(2,1)%%C
 ItemDisplay[rin !ID UNI]: %NOTIFY(ITEM,HIGH)%%CORAL%%Ring %GREEN%(%ILVL%)
 ItemDisplay[rin ID UNI]: %NOTIFY(ITEM,HIGH)%%CORAL%%NAME% %GREEN%(%ILVL%)
 
-ItemDisplay[rin !UNI (MAG OR RARE) !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
-ItemDisplay[rin !UNI (MAG OR RARE) ID FILTERLVL=1 ILVL<60]:%NAME% %GREEN%(%ILVL%)
-ItemDisplay[rin !UNI (MAG OR RARE) !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
-ItemDisplay[rin !UNI (MAG OR RARE) ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[rin !UNI (MAG OR RARE) !ID FILTERLVL=1]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
+ItemDisplay[rin !UNI (MAG OR RARE) ID FILTERLVL=1]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[rin !UNI (MAG OR RARE) !ID FILTERLVL=2 ILVL>59]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
+ItemDisplay[rin !UNI (MAG OR RARE) ID FILTERLVL=2 ILVL>59]:%NAME% %GREEN%(%ILVL%)
 ItemDisplay[rin !UNI (MAG OR RARE) !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
 ItemDisplay[rin !UNI (MAG OR RARE) ID FILTERLVL>2 ILVL>79]:%NAME% %GREEN%(%ILVL%)
 
@@ -314,10 +315,10 @@ ItemDisplay[rin !UNI (MAG OR RARE) ID FILTERLVL>2 ILVL>79]:%NAME% %GREEN%(%ILVL%
 ItemDisplay[amu !ID UNI]: %NOTIFY(ITEM,HIGH)%CORAL%%Ring %GREEN%(%ILVL%)
 ItemDisplay[amu ID UNI]: %NOTIFY(ITEM,HIGH)%CORAL%%%NAME% %GREEN%(%ILVL%)
 
-ItemDisplay[amu !UNI (MAG OR RARE) !ID FILTERLVL=1 ILVL<60]:%NOTIFY(ITEM,HIGH)%Amu %GREEN%(%ILVL%)
-ItemDisplay[amu !UNI (MAG OR RARE) ID FILTERLVL=1 ILVL<60]:%NAME% %GREEN%(%ILVL%)
-ItemDisplay[amu !UNI (MAG OR RARE) !ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NOTIFY(ITEM,HIGH)%Amu %GREEN%(%ILVL%)
-ItemDisplay[amu !UNI (MAG OR RARE) ID FILTERLVL=2 (ILVL>59 AND ILVL<80)]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[amu !UNI (MAG OR RARE) !ID FILTERLVL=1]:%NOTIFY(ITEM,HIGH)%Amu %GREEN%(%ILVL%)
+ItemDisplay[amu !UNI (MAG OR RARE) ID FILTERLVL=1]:%NAME% %GREEN%(%ILVL%)
+ItemDisplay[amu !UNI (MAG OR RARE) !ID FILTERLVL=2 ILVL>59 ]:%NOTIFY(ITEM,HIGH)%Amu %GREEN%(%ILVL%)
+ItemDisplay[amu !UNI (MAG OR RARE) ID FILTERLVL=2 ILVL>59]:%NAME% %GREEN%(%ILVL%)
 ItemDisplay[amu !UNI (MAG OR RARE) !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%Amu %GREEN%(%ILVL%)
 ItemDisplay[amu !UNI (MAG OR RARE) ID FILTERLVL>2 ILVL>79]:%NAME% %GREEN%(%ILVL%)
 
@@ -383,6 +384,27 @@ ItemDisplay[CL3 (SUP AND NMAG) SOCK=0]:%NAME% %ORANGE%PAL
 ItemDisplay[EQ3 (SUP AND NMAG) SOCK=0]:%NAME%
 ItemDisplay[WP3 (SUP AND NMAG) SOCK=0]:%NAME%
 
+// Caster Blood HitPwr Safety   Bases
+// Helm
+ItemDisplay[(msk OR xsk OR usk) MAG !ETH]:%SAGE%Caster Helm %GREEN%(%ILVL%)
+ItemDisplay[(hlm OR xlm OR ulm) MAG !ETH]:%SAGE%Blood Helm %GREEN%(%ILVL%)
+ItemDisplay[(fhl OR xhl OR uhl) MAG !ETH]:%SAGE%HitPwr Helm %GREEN%(%ILVL%)
+ItemDisplay[(crn OR xrn OR urn) MAG !ETH]:%SAGE%Safety Helm %GREEN%(%ILVL%)
+//Gloves
+ItemDisplay[(lgl OR xlg OR ulg) MAG !ETH]:%SAGE%Caster Helm %GREEN%(%ILVL%)
+ItemDisplay[(vgl OR xvg OR uvg) MAG !ETH]:%SAGE%Blood Helm %GREEN%(%ILVL%)
+ItemDisplay[(mgl OR xmg OR umg) MAG !ETH]:%SAGE%HitPwr Helm %GREEN%(%ILVL%)
+ItemDisplay[(hgl OR xhg OR uhg) MAG !ETH]:%SAGE%Safety Helm %GREEN%(%ILVL%)
+//Belt
+ItemDisplay[(vbl OR zvb OR uvc) MAG !ETH]:%SAGE%Caster Helm %GREEN%(%ILVL%)
+ItemDisplay[(mbl OR zmb OR umc) MAG !ETH]:%SAGE%Blood Helm %GREEN%(%ILVL%)
+ItemDisplay[(tbl OR ztb OR utc) MAG !ETH]:%SAGE%HitPwr Helm %GREEN%(%ILVL%)
+ItemDisplay[(lbl OR zlb OR ulc) MAG !ETH]:%SAGE%Safety Helm %GREEN%(%ILVL%)
+//Boots
+ItemDisplay[(ulb OR xlb OR lbt) MAG !ETH]:%SAGE%Caster Helm %GREEN%(%ILVL%)
+ItemDisplay[(tbt OR xtb OR utb) MAG !ETH]:%SAGE%Blood Helm %GREEN%(%ILVL%)
+ItemDisplay[(mbt OR xmb OR umb) MAG !ETH]:%SAGE%HitPwr Helm %GREEN%(%ILVL%)
+ItemDisplay[(hbt OR xhb OR uhb) MAG !ETH]:%SAGE%Safety Helm %GREEN%(%ILVL%)
 
 // Uniq Items
 ItemDisplay[uap UNI]:%NOTIFY(ITEM,HIGH)%%MAPICON(5)%%CORAL%%NAME% // SHAKO
@@ -399,11 +421,21 @@ ItemDisplay[hbl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Sigon's Wrap
 ItemDisplay[hgl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Sigon's Gage
 
 // Isenhart's
-ItemDisplay[bsd SET !ID]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Lightbrand
-ItemDisplay[fhl SET !ID]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Horns
-ItemDisplay[brs SET !ID]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Case
-ItemDisplay[gts SET !ID]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Parry
+ItemDisplay[bsd SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Lightbrand
+ItemDisplay[fhl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Horns
+ItemDisplay[brs SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Case
+ItemDisplay[gts SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Parry
 
+// Sander's
+ItemDisplay[cap SET]: %NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)% %GREEN%Sander's Paragon
+ItemDisplay[bwn SET]: %NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)% %GREEN%Sander's Superstition
+ItemDisplay[vgl SET]: %NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)% %GREEN%Sander's Taboo
+ItemDisplay[vbt SET]: %NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)% %GREEN%Sander's Riprap
+
+// Iratha
+ItemDisplay[crn SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Coil
+ItemDisplay[tbl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Cord
+ItemDisplay[tgl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Cuff
 
 
 // Armors
