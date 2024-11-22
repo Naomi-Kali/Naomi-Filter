@@ -311,6 +311,8 @@ ItemDisplay[rin !UNI (MAG OR RARE) ID FILTERLVL=2 ILVL>59]:%NAME% %GREEN%(%ILVL%
 ItemDisplay[rin !UNI (MAG OR RARE) !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
 ItemDisplay[rin !UNI (MAG OR RARE) ID FILTERLVL>2 ILVL>79]:%NAME% %GREEN%(%ILVL%)
 
+ItemDisplay[SET rin]: %GREEN% %NAME%
+
 // Amulet
 ItemDisplay[amu !ID UNI]: %NOTIFY(ITEM,HIGH)%CORAL%%Ring %GREEN%(%ILVL%)
 ItemDisplay[amu ID UNI]: %NOTIFY(ITEM,HIGH)%CORAL%%%NAME% %GREEN%(%ILVL%)
@@ -321,6 +323,9 @@ ItemDisplay[amu !UNI (MAG OR RARE) !ID FILTERLVL=2 ILVL>59 ]:%NOTIFY(ITEM,HIGH)%
 ItemDisplay[amu !UNI (MAG OR RARE) ID FILTERLVL=2 ILVL>59]:%NAME% %GREEN%(%ILVL%)
 ItemDisplay[amu !UNI (MAG OR RARE) !ID FILTERLVL>2 ILVL>79]:%NOTIFY(ITEM,HIGH)%Amu %GREEN%(%ILVL%)
 ItemDisplay[amu !UNI (MAG OR RARE) ID FILTERLVL>2 ILVL>79]:%NAME% %GREEN%(%ILVL%)
+
+ItemDisplay[amu SET]: %NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%**** Set Amu **** (%ILVL%)
+ItemDisplay[amu SET CLSK1=2 ID]: %NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%CORAL%Tal Rasha Amu %GREEN%(%ILVL%)
 
 // Jewels
 ItemDisplay[jew MAG !ID]:%MAPICON(21,0)%%NOTIFY(ITEM,HIGH)%%BLUE%Jewel %GREEN%(%ILVL%)
@@ -436,21 +441,16 @@ ItemDisplay[fhl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Horns
 ItemDisplay[brs SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Case
 ItemDisplay[gts SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Isenhart's Parry
 
-// Sander's
-ItemDisplay[cap SET]: %NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)% %GREEN%Sander's Paragon
+
+// Infernal / Sanders / Iratha
+ItemDisplay[cap SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Infernal Cranium%BLUE%/%GREEN%Sander's Paragon
+ItemDisplay[tbl SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Infernal Sign %BLUE%/%GREEN%Iratha's Cord
+ItemDisplay[gwn SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Infernal Torch
 ItemDisplay[bwn SET]: %NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)% %GREEN%Sander's Superstition
 ItemDisplay[vgl SET]: %NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)% %GREEN%Sander's Taboo
 ItemDisplay[vbt SET]: %NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)% %GREEN%Sander's Riprap
-
-// Iratha
 ItemDisplay[crn SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Coil
-ItemDisplay[tbl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Cord
-ItemDisplay[tgl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Cuff
-
-// Infernal
-ItemDisplay[gwn SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Infernal Torch
-
-// Arctic
+ItemDisplay[tgl SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Iratha's Cuff %BLUE%/%GREEN%Arctic Mitts
 ItemDisplay[qui SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Arctic Furs
 ItemDisplay[vbl SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Arctic Binding
 ItemDisplay[swb SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Arctic Horn
@@ -471,6 +471,137 @@ ItemDisplay[7wd SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %RED%* %GREEN%Bul-Kathos
 
 // Laying Hands
 ItemDisplay[ulg SET]: %NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %RED%** %GREEN%Laying of Hands %RED%**
+
+// Aldurs
+ItemDisplay[dr8 SET !ID]: %NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %GREEN%Aldur's Stony Gaze
+ItemDisplay[xtb SET !ID]: %NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %RED%* %GREEN%Aldur's Advance %RED%*
+ItemDisplay[uul SET !ID]: %NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %GREEN%Aldur's Deception
+ItemDisplay[9mt SET !ID]: %NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %GREEN%Aldur's Rhythm
+
+// Angelic
+ItemDisplay[rng SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Angelic Mantle
+ItemDisplay[sbr SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Angelic Sickle
+
+// Arcana
+ItemDisplay[skp SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Arcanna's Head
+ItemDisplay[ltp SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Arcanna's Flesh
+ItemDisplay[wst SET]: %NOTIFY(ITEM,LOW)%%MAPICON(15,2)% %GREEN%Arcanna's Deathwand
+
+// Civerb
+ItemDisplay[gsc SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Civerb's Cudgel
+ItemDisplay[lrg SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Civerb's Ward
+
+// Cleglaw
+ItemDisplay[lsd SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Cleglaw's Tooth
+ItemDisplay[mgl SET:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Cleglaw's Pincer's
+ItemDisplay[sml SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Cleglaw's Claw
+
+// Death's Disuise
+ItemDisplay[wsd SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Death's Touch
+ItemDisplay[lgl SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Death's Hand
+ItemDisplay[lbl SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Death's Guard
+
+// Hsaru's Defense
+ItemDisplay[buc SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Hsarus' Iron Fist
+ItemDisplay[mbl SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Hsarus' Iron Stay
+ItemDisplay[mbt SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Hsarus' Iron Heel
+
+// Milabrega
+ItemDisplay[crn SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Milabrega's Diadem
+ItemDisplay[aar SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Milabrega's Robe
+ItemDisplay[kit SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Milabrega's Orb
+ItemDisplay[wsp SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Milabrega's Rod
+
+// Tancred
+ItemDisplay[bhm SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Tancred's Skull
+ItemDisplay[ful SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Tancred's Spine
+ItemDisplay[lbt SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Tancred's Hobnails
+ItemDisplay[mpi SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Tancred's Crowbill
+
+// Vidala
+ItemDisplay[lbb SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Vidala's Barb
+ItemDisplay[lea SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Vidala's Ambush
+ItemDisplay[tbt SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Vidala's Fetlock
+
+// Cow King
+ItemDisplay[xap SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Cow King's Horns
+ItemDisplay[stu SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Cow King's Hide
+ItemDisplay[vbt SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Cow King's Hooves
+
+// The Discliple
+ItemDisplay[uui SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Dark Adherent
+ItemDisplay[xlb SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Rite of Passage
+ItemDisplay[umc SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Credendum
+
+// Griswold
+ItemDisplay[xar SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Griswold's Heart
+ItemDisplay[urn SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Griswold's Valor
+ItemDisplay[7ws SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Griswold's Redemption
+ItemDisplay[paf SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Griswold's Honor
+
+// Heaven's
+ItemDisplay[xrs SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Haemosu's Adamant
+ItemDisplay[7ma SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Dangoon's Teaching
+ItemDisplay[uts SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Taebaek's Glory
+ItemDisplay[uhm SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%RED%* %GREEN%%DGREEN%Ondal's Almighty %RED%*
+
+// Hwanin
+ItemDisplay[xrn SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Hwanin's Splendor
+ItemDisplay[9vo SET !ETH]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Hwanin's Justice
+ItemDisplay[xcl SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Hwanin's Refuge
+ItemDisplay[mbl SET]:%NOTIFY(ITEM,LOW)%%MAPICON(15,2)%%GREEN%Hwanin's Blessing
+
+// Immortal
+ItemDisplay[ba5 SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Immortal King's Will
+ItemDisplay[7m7 SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Immortal King's Stone Crusher
+ItemDisplay[uar SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%*** %GREEN%Immortal King's Soul Cage %RED%***
+ItemDisplay[zhb SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Immortal King's Detail
+ItemDisplay[xhg SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Immortal King's Forge
+ItemDisplay[xhb SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Immortal King's Pillar
+
+// Mavina
+ItemDisplay[ci3 SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Mavina's True Sight
+ItemDisplay[amc SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Mavina's Caster
+ItemDisplay[uld SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Mavina's Embrace
+ItemDisplay[xtg SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Mavina's Icy Clutch
+ItemDisplay[zvb SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Mavina's Tenet
+
+// Natalya
+ItemDisplay[xh9 SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %GREEN%Natalya's Totem
+ItemDisplay[7qr SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)% %RED%*** %GREEN%Natalya's Mark %RED%***
+ItemDisplay[ucl SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%GREEN%Natalya's Shadow %RED%*
+ItemDisplay[xmb SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%*%GREEN%Natalya's Soul %RED%*
+
+// Naj
+ItemDisplay[ci0 SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Naj's Circlet
+ItemDisplay[ult SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%RED%* %GREEN%Naj's Light Plate %RED%*
+ItemDisplay[6cs SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%RED%*%GREEN%Naj's Puzzler %RED%*
+
+// Orphan
+ItemDisplay[xhm SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%RED%** %GREEN%Guillaume's Face %RED%**
+ItemDisplay[xml SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Whitstan's Guard
+ItemDisplay[xvg SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Magnus' Skin
+ItemDisplay[ztb SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Wilhelm's Pride
+
+// Sazabi
+ItemDisplay[xhl SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%GREEN%Sazabi's Mental Sheath
+ItemDisplay[7ls SET !ETH]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%RED%* %GREEN%Sazabi's Cobalt Redeemer %RED%*
+ItemDisplay[upl SET]:%NOTIFY(ITEM,MEDIUM)%%MAPICON(15,2)%%RED%* %GREEN%Sazabi's Ghost Liberator %RED%*
+
+// Tal Rasha
+ItemDisplay[oba SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%* %GREEN%Tal Rasha's Lidless Eye %RED%*
+ItemDisplay[xsk SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%* %GREEN%Tal Rasha's Horadric Crest %RED%*
+ItemDisplay[uth SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%*** %GREEN%Tal Rasha's Guardianship %PURPLE%***
+ItemDisplay[zmb SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%* %GREEN%Tal Rasha's Fine-Spun Cloth %RED%*
+
+// Trang-Oul
+ItemDisplay[uh9 SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%* %GREEN%Trang-Oul's Guise %RED%*
+ItemDisplay[xul SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%* %GREEN%Trang-Oul's Scales %RED%*
+ItemDisplay[ne9 SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%* %GREEN%Trang-Oul's Wing %RED%*
+ItemDisplay[utc SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%* %GREEN%Trang-Oul's Girth %RED%*
+ItemDisplay[xmg SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%* %GREEN%Trang-Oul's Claws %RED%*
+
+
 
 // Circlet's        Circlet Coronet Tiara Diadem
 ItemDisplay[(ci0 OR ci1 OR ci2 OR ci3) !SET !ETH]: %NOTIFY(ITEM,HIGH)%%SAGE%%NAME%%MAPICON(21,0)%
