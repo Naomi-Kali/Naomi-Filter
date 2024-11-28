@@ -39,27 +39,27 @@ ItemDisplay[CLSK5>1]: %NAME%%RED%+ Dru Skills
 ItemDisplay[CLSK6>1]: %NAME%%RED%+ Asa Skills
 ItemDisplay[ALLSK>1]: %NAME%%BLUE%+ All Skills
 
-ItemDisplay[TABSK0>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Bow & Crossbow (Ama)
-ItemDisplay[TABSK1>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Passive & Magic (Ama)
-ItemDisplay[TABSK2>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Javelin & Spear (Ama)
-ItemDisplay[TABSK8>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Fire (Sorc)
-ItemDisplay[TABSK9>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Lightning (Sorc)
-ItemDisplay[TABSK10>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Cold (Sorc)
-ItemDisplay[TABSK16>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Curses (Necr)
-ItemDisplay[TABSK17>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Poison & Bone (Necr)
-ItemDisplay[TABSK18>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Summon (Necr)
-ItemDisplay[TABSK24>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Combat (Pal)
-ItemDisplay[TABSK25>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Offensive Auras (Pal)
-ItemDisplay[TABSK26>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Defensive Auras (Pal)
-ItemDisplay[TABSK32>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Combat (Barb)
-ItemDisplay[TABSK33>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Masteries (Barb)
-ItemDisplay[TABSK34>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Warcries (Barb)
-ItemDisplay[TABSK40>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Summoning (Dru)
-ItemDisplay[TABSK41>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Shapeshifting (Dru)
-ItemDisplay[TABSK42>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Elemental (Dru)
-ItemDisplay[TABSK48>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Traps (Asa)
-ItemDisplay[TABSK49>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Shadow Disciplines (Asa)
-ItemDisplay[TABSK50>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Martial Arts (Asa)
+ItemDisplay[TABSK0>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Bow & Crossbow (Ama) %CONTINUE%
+ItemDisplay[TABSK1>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Passive & Magic (Ama) %CONTINUE%
+ItemDisplay[TABSK2>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Javelin & Spear (Ama) %CONTINUE%
+ItemDisplay[TABSK8>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Fire (Sorc) %CONTINUE%
+ItemDisplay[TABSK9>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Lightning (Sorc) %CONTINUE%
+ItemDisplay[TABSK10>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Cold (Sorc) %CONTINUE%
+ItemDisplay[TABSK16>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Curses (Necr) %CONTINUE%
+ItemDisplay[TABSK17>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Poison & Bone (Necr) %CONTINUE%
+ItemDisplay[TABSK18>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Summon (Necr) %CONTINUE%
+ItemDisplay[TABSK24>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Combat (Pal) %CONTINUE%
+ItemDisplay[TABSK25>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Offensive Auras (Pal) %CONTINUE%
+ItemDisplay[TABSK26>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Defensive Auras (Pal) %CONTINUE%
+ItemDisplay[TABSK32>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Combat (Barb) %CONTINUE%
+ItemDisplay[TABSK33>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Masteries (Barb) %CONTINUE%
+ItemDisplay[TABSK34>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Warcries (Barb) %CONTINUE%
+ItemDisplay[TABSK40>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Summoning (Dru) %CONTINUE%
+ItemDisplay[TABSK41>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Shapeshifting (Dru) %CONTINUE%
+ItemDisplay[TABSK42>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Elemental (Dru) %CONTINUE%
+ItemDisplay[TABSK48>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Traps (Asa) %CONTINUE%
+ItemDisplay[TABSK49>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Shadow Disciplines (Asa) %CONTINUE%
+ItemDisplay[TABSK50>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Martial Arts (Asa) %CONTINUE%
 
 // [Sorc SKILLS ALL THE TIME] -> Under Extending
 ItemDisplay[SKILL("Fire Mastery")>1]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Fire Mastery
@@ -368,7 +368,7 @@ ItemDisplay[cm1 !ID]:%CORAL%Charm [1] %GREEN%(%ILVL%) %CONTINUE%
 ItemDisplay[cm2 !ID]:%CORAL%Charm [2] %GREEN%(%ILVL%) %CONTINUE%
 ItemDisplay[cm3 !ID]:%CORAL%Charm [3] %GREEN%(%ILVL%)%CONTINUE%
 // Ring
-ItemDisplay[rin !ID UNI]: %NOTIFY(ITEM,HIGH)%%CORAL%%Ring %GREEN%(%ILVL%)
+ItemDisplay[rin !ID UNI]: %NOTIFY(ITEM,HIGH)%%CORAL%Ring %GREEN%(%ILVL%)
 ItemDisplay[rin ID UNI]: %NOTIFY(ITEM,HIGH)%%CORAL%%NAME% %GREEN%(%ILVL%)
 
 ItemDisplay[rin !UNI (MAG OR RARE) !ID FILTERLVL=1]:%NOTIFY(ITEM,HIGH)%Ring %GREEN%(%ILVL%)
@@ -470,13 +470,17 @@ ItemDisplay[FILTERLVL<2 (EQ3 OR WP3) (!SUP AND NMAG) SOCK=4]:%NOTIFY(ITEM,HIGH)%
 ItemDisplay[(EQ3 OR WP3) (SUP AND NMAG) SOCK=4]:%NOTIFY(ITEM,HIGH)%%ORANGE%Spirit
 ItemDisplay[(EQ3 OR WP3) (SUP AND ETH) SOCK=4]:%NOTIFY(ITEM,HIGH)%%GRAY%ETH %ORANGE%Spirit
 
-ItemDisplay[FILTERLVL<2 (WP8 OR WP7) (!SUP AND NMAG) SOCK=4 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%SAGE%Low %ORANGE%Insight/Infinity
-ItemDisplay[(WP8 OR WP7) (SUP AND NMAG) SOCK=4 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%ORANGE%Insight/Infinity
-ItemDisplay[(WP8 OR WP7) (SUP AND ETH) SOCK=4 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%GRAY%ETH %ORANGE%Insight/Infinity
+ItemDisplay[FILTERLVL<2 (WP8 OR WP7) (!SUP AND NMAG) SOCK=4]:%NOTIFY(ITEM,HIGH)%%SAGE%Low %ORANGE%Insight/Infinity
+ItemDisplay[(WP8 OR WP7) (SUP AND NMAG) SOCK=4]:%NOTIFY(ITEM,HIGH)%%ORANGE%Insight/Infinity
+ItemDisplay[(WP8 OR WP7) (SUP AND ETH) SOCK=4]:%NOTIFY(ITEM,HIGH)%%GRAY%ETH %ORANGE%Insight/Infinity
 
-ItemDisplay[FILTERLVL<2 (WP8 OR WP7) (!SUP AND NMAG) SOCK=5 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%SAGE%Low %ORANGE%Obedience
-ItemDisplay[(WP8 OR WP7) (SUP AND NMAG) SOCK=5 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%ORANGE%Obedience
-ItemDisplay[(WP8 OR WP7) (SUP AND ETH) SOCK=5 (NMAG OR ETH)]:%NOTIFY(ITEM,HIGH)%%GRAY%ETH %ORANGE%Obedience
+ItemDisplay[FILTERLVL<2 (WP8 OR WP7) (!SUP AND NMAG) SOCK=5]:%NOTIFY(ITEM,HIGH)%%SAGE%Low %ORANGE%Obedience
+ItemDisplay[(WP8 OR WP7) (SUP AND NMAG) SOCK=5]:%NOTIFY(ITEM,HIGH)%%ORANGE%Obedience
+ItemDisplay[(WP8 OR WP7) (SUP AND ETH) SOCK=5]:%NOTIFY(ITEM,HIGH)%%GRAY%ETH %ORANGE%Obedience
+
+ItemDisplay[FILTERLVL<2 WP13 (!SUP AND NMAG) SOCK=4]:%NOTIFY(ITEM,HIGH)%%SAGE%Low %ORANGE%Holy Thunder
+ItemDisplay[WP13 (SUP AND NMAG) SOCK=4]:%NOTIFY(ITEM,HIGH)%%ORANGE%Holy Thunder
+ItemDisplay[WP13 (SUP AND ETH) SOCK=4]:%NOTIFY(ITEM,HIGH)%%GRAY%ETH %ORANGE%Holy Thunder
 
 // Socket Bases
 ItemDisplay[CL3 (SUP AND NMAG) SOCK=0]:%NAME% %ORANGE%PAL
@@ -716,6 +720,8 @@ ItemDisplay[ARMOR !SUP !MAG SOCK>1]:%NAME% (%ILVL%)%GREEN% (%SOCKETS%)
 //ItemDisplay[WP7]: %NAME%
 //ItemDisplay[WP8]: %NAME%
 //ItemDisplay[WP9]: %NAME%
+ItemDisplay[8lb UNI]: %NOTIFY(ITEM,LOW)%%MAPICON(5)% %TAN%%RED%*** %PURPLE% Kuko Shakaku %RED%*** %CONTINUE%
+
 //ItemDisplay[WP10]: %NAME%
 //ItemDisplay[WP11]: %NAME%
 //ItemDisplay[WP12]: %NAME%
