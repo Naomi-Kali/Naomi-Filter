@@ -30,14 +30,14 @@ Option[IgnoreMissingSounds]: True
 
 
 // Skiller Items
-ItemDisplay[CLSK0>1]: %NAME%%RED%+ Ama Skills
-ItemDisplay[CLSK1>1]: %NAME%%RED%+ Sorc Skills
-ItemDisplay[CLSK2>1]: %NAME%%RED%+ Necr Skills
-ItemDisplay[CLSK3>1]: %NAME%%RED%+ Pal Skills
-ItemDisplay[CLSK4>1]: %NAME%%RED%+ Barb Skills
-ItemDisplay[CLSK5>1]: %NAME%%RED%+ Dru Skills
-ItemDisplay[CLSK6>1]: %NAME%%RED%+ Asa Skills
-ItemDisplay[ALLSK>1]: %NAME%%BLUE%+ All Skills
+ItemDisplay[CLSK0>0]:%NAME%%RED% + Ama Skills %CONTINUE%
+ItemDisplay[CLSK1>0]:%NAME%%RED% + Sorc Skills %CONTINUE%
+ItemDisplay[CLSK2>0]:%NAME%%RED% + Necr Skills %CONTINUE%
+ItemDisplay[CLSK3>0]:%NAME%%RED% + Pal Skills %CONTINUE%
+ItemDisplay[CLSK4>0]:%NAME%%RED% + Barb Skills %CONTINUE%
+ItemDisplay[CLSK5>0]:%NAME%%RED% + Dru Skills %CONTINUE%
+ItemDisplay[CLSK6>0]:%NAME%%RED% + Asa Skills %CONTINUE%
+ItemDisplay[ALLSK>0]:%NAME%%BLUE% + All Skills %CONTINUE%
 
 ItemDisplay[TABSK0>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Bow & Crossbow (Ama) %CONTINUE%
 ItemDisplay[TABSK1>0]: %NOTIFY(ITEM,HIGH)% %NAME%%ORANGE% + Passive & Magic (Ama) %CONTINUE%
@@ -723,7 +723,7 @@ ItemDisplay[xmg SET]:%NOTIFY(ITEM,HIGH)%%MAPICON(15,2)%%RED%* %GREEN%Trang-Oul's
 
 
 // Circlet's        Circlet Coronet Tiara Diadem
-ItemDisplay[(ci0 OR ci1 OR ci2 OR ci3) !SET !ETH]: %NOTIFY(ITEM,HIGH)%%SAGE%%NAME%%MAPICON(21,0)%
+ItemDisplay[(ci0 OR ci1 OR ci2 OR ci3) !SET !ETH]: %NOTIFY(ITEM,HIGH)%%SAGE%%NAME%%MAPICON(21,0)% %CONTINUE%
 
 
 // Armors
@@ -762,6 +762,7 @@ ItemDisplay[WEAPON FILTERLVL<2 !NMAG (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)
 ItemDisplay[WEAPON FILTERLVL>1 !NMAG (RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)         // Tier 2
 ItemDisplay[WEAPON SUP !MAG SOCK>1]:%NAME% (%ILVL%)%GREEN% (%SOCKETS%)
 ItemDisplay[WEAPON !SUP !MAG SOCK>1]:%NAME% (%ILVL%)%GREEN% (%SOCKETS%)
+ItemDisplay[WEAPON PRICE>24999]:%RED%%PRICE%$%NL%%CORAL%%NAME%
 
 // Class Specific
 ItemDisplay[CL1 FILTERLVL<2 !NMAG !ETH (MAG OR RARE OR UNI OR SET OR INF OR SYNTH)]:%NAME% %GREEN%(%ILVL%)     // Tier1
